@@ -5,6 +5,7 @@
 	body {
 		background-color: lightgrey;
 		font-family: Arial, Helvetica, sans-serif; 
+
 	}
 
 	h1 {
@@ -14,8 +15,6 @@
 
 	p1, p2, p3 {
 		position: relative;
-		
-		
 		border: 3px solid black;	
 		padding: 5px;
 		text-align: left; 
@@ -25,7 +24,8 @@
 	}
 
 
-	.menu_item {
+	p1.menu_item {
+		font-size: 12px;
 		padding-top: 30px;
 	}
 
@@ -41,12 +41,16 @@
 		font-weight: bold;
 	}
 
-	@media(min-width: 1200px) {
+	@media(min-width: 992px) {
 		p1, p2, p3 {
 			background-color: lightgreen;
-			font-size: 12px;
+		
 			height: 10%;
 			width: 30%;
+		}
+
+		.menu_item {
+
 		}
 
 		.chicken {
@@ -63,26 +67,31 @@
 	}
 
 
-	@media(min-width: 768px) and (max-width: 1199px) {
+	@media(min-width: 768px) and (max-width: 991px) {
 
 		p1, p2, p3 {
 			background-color: lightblue;
-			height: 175px;
-			font-size: 16px;
+				
 
 		}
 
 		p1, p2 {
-		
+			
 			width: 46.5%;
 
 		}
 
+		p1.menu_item {
+			font-size: 18px;
+		}
+		
+
 		p3 {
-			
+			font-size: 24px;
 			width: 95%;
 			
 		}
+
 
 		.chicken {
 			background-color: red;
@@ -98,6 +107,7 @@
 
 
 		}
+
 
 		@media(max-width: 767px) {
 
